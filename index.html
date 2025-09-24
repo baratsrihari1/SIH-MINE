@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Farmer Support System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>🌾 Farmer Support & Advice</h1>
+    <p>Your farming companion for better crop health</p>
+  </header>
+
+  <!-- Query Form Section -->
+  <section class="form-section">
+    <h2>Ask Your Query</h2>
+    <form id="queryForm">
+      <input type="text" id="farmerName" placeholder="Your Name" required>
+      <input type="text" id="cropType" placeholder="Crop Type" required>
+      <textarea id="queryText" placeholder="Describe your issue..." required></textarea>
+      <button type="submit">Submit Query</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <!-- Advice Section -->
+  <section class="advice-section">
+    <h2>Advice & Solutions</h2>
+    <div id="adviceOutput">
+      <p>No advice yet. Submit a query to get help!</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Farmer Support System | Empowering Farmers with Technology</p>
+  </footer>
+
+  <script src="app.js"></script>
+  <!-- Chatbot Section -->
+
+<div class="chatbot-container" id="chatbot">
+  <div class="chat-header">🌾 Farmer Support Chatbot</div>
+  <div class="chat-body" id="chatBody">
+    <div class="bot-message">Hi! I'm your farming assistant. How can I help you today?</div>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userMessage" placeholder="Type your question..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+</div>
+</body>
+</html>
+
+
+
